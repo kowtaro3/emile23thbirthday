@@ -1,0 +1,312 @@
+@charset'utf-8';
+
+/* common */
+body {
+  margin: 0;
+  background: #02061a;
+}
+
+/* header */
+header {
+  background: #080b36;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* top */
+
+h2 {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.carousel {
+  width: 80%;
+  margin: 16px auto;
+}
+
+.container {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.container ul li {
+  height: 100%;
+  min-width: 100%;
+}
+
+.container ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#prev,
+#next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+border: none;
+background: rgba(0, 0, 0, 0.8);
+color: white;
+font-size: 24px;
+padding: 0px 8px 4px;
+cursor: pointer;
+}
+
+#prev:hover,
+#next:hover {
+  opacity: 0.8;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  margin-top: 16px;
+  text-align: center;
+}
+
+nav button + button {
+  margin-left: 8px;
+}
+
+nav button {
+  border: none;
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav .current {
+background: #999;
+}
+
+
+/* message */
+
+.message p {
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+
+/* shedules */
+
+h3 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+
+.shedules {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.shedules p {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* shedule detail*/
+
+.detail1 {
+  background: #080b36;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.detail2 {
+  background: #080b36;
+  color: white;
+  border-top: solid #02061a;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-size: 32px;
+
+}
+
+h6 {
+  margin-top: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+
+.sheduledetails p {
+  margin: 0;
+}
+
+.sheduledetails img {
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+#modal p {
+  text-align: center;
+}
+
+#yes, #no {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+#modal > p {
+  margin: 0 0 20px;
+}
+
+#mask.hidden2 {
+  display: none;
+}
+
+#modal.hidden2 {
+  transform: translate(0, -500px);
+}
+
+/* letter */
+.letter {
+  text-align: center;
+  cursor: pointer;
+}
+
+#modalwindow p {
+  text-align: center;
+}
+
+#read, #notyet {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto 0;
+}
+
+#cover {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modalwindow {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+#modalwindow > p {
+  margin: 0 0 20px;
+}
+
+#cover.hidden3 {
+  display: none;
+}
+
+#modalwindow.hidden3 {
+  transform: translate(0, -500px);
+}
+
+
+/* footer */
+
+footer {
+  color: white;
+  background: #080b36;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
